@@ -1,4 +1,4 @@
-B#!/bin/bash
+#!/bin/bash
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
@@ -15,7 +15,7 @@ source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
 nvm use v0.10.12
 
-#1;2802;0c Install jshint to allow checking of JS code within emacs
+# Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
 npm install -g jshint
 
