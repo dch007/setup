@@ -5,6 +5,9 @@ B#!/bin/bash
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y git-core
+
+# why git-core, not git?
+
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # Load nvm and install latest production node
