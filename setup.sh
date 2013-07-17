@@ -45,9 +45,6 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
-# should do the trick
-sudo apt-get install nodejs -y
-sudo apt-get install npm -y
 
 # instead of "dch007/bitstarter.git" reference your own repository
 git clone https://github.com/dch007/bitstarter.git
