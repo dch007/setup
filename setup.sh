@@ -1,4 +1,4 @@
-#!/bin/bash
+B#!/bin/bash
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
@@ -12,7 +12,7 @@ source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
 nvm use v0.10.12
 
-# Install jshint to allow checking of JS code within emacs
+#1;2802;0c Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
 npm install -g jshint
 
@@ -44,4 +44,17 @@ ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
+
+# should do the trick
+sudo apt-get install nodejs -y
+sudo apt-get install npm -y
+
+# instead of "dch007/bitstarter.git" reference your own repository
+git clone https://github.com/dch007/bitstarter.git
+
+cd bitstarter
+
+#Should install dependencies according to packages.json
+npm install
+
 
